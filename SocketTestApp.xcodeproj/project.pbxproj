@@ -12,9 +12,12 @@
 		B1225A6F212828860093BFC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1225A6D212828860093BFC6 /* Main.storyboard */; };
 		B1225A71212828880093BFC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1225A70212828880093BFC6 /* Assets.xcassets */; };
 		B1225A74212828880093BFC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1225A72212828880093BFC6 /* LaunchScreen.storyboard */; };
+		F3AF36B82EB65DCFA47E2871 /* Pods_SocketTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD672E77E3322E0E4183831B /* Pods_SocketTestApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FA6F9403CD02A9711422059 /* Pods-SocketTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocketTestApp/Pods-SocketTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		5EE39B67F4C9408F7B6390C1 /* Pods-SocketTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocketTestApp/Pods-SocketTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B1225A66212828860093BFC6 /* SocketTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1225A69212828860093BFC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1225A6B212828860093BFC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		B1225A70212828880093BFC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1225A73212828880093BFC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1225A75212828880093BFC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD672E77E3322E0E4183831B /* Pods_SocketTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocketTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3AF36B82EB65DCFA47E2871 /* Pods_SocketTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AEE1A186E5933A861E53C89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EE39B67F4C9408F7B6390C1 /* Pods-SocketTestApp.debug.xcconfig */,
+				1FA6F9403CD02A9711422059 /* Pods-SocketTestApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A71999D92BC29BADEEC1480D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD672E77E3322E0E4183831B /* Pods_SocketTestApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B1225A5D212828860093BFC6 = {
 			isa = PBXGroup;
 			children = (
 				B1225A68212828860093BFC6 /* SocketTestApp */,
 				B1225A67212828860093BFC6 /* Products */,
+				7AEE1A186E5933A861E53C89 /* Pods */,
+				A71999D92BC29BADEEC1480D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1225A78212828880093BFC6 /* Build configuration list for PBXNativeTarget "SocketTestApp" */;
 			buildPhases = (
+				A8967D4F13ECE078531DAFCA /* [CP] Check Pods Manifest.lock */,
 				B1225A62212828860093BFC6 /* Sources */,
 				B1225A63212828860093BFC6 /* Frameworks */,
 				B1225A64212828860093BFC6 /* Resources */,
+				9556F95C10302BD3870D8265 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9556F95C10302BD3870D8265 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SocketTestApp/Pods-SocketTestApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocketTestApp/Pods-SocketTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8967D4F13ECE078531DAFCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocketTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B1225A62212828860093BFC6 /* Sources */ = {
@@ -278,14 +355,12 @@
 		};
 		B1225A79212828880093BFC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EE39B67F4C9408F7B6390C1 /* Pods-SocketTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SocketTestApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.socket..SocketTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -295,14 +370,12 @@
 		};
 		B1225A7A212828880093BFC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA6F9403CD02A9711422059 /* Pods-SocketTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SocketTestApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.socket..SocketTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
