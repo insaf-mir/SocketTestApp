@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		B1225A6A212828860093BFC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1225A69212828860093BFC6 /* AppDelegate.swift */; };
-		B1225A6C212828860093BFC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1225A6B212828860093BFC6 /* ViewController.swift */; };
-		B1225A6F212828860093BFC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1225A6D212828860093BFC6 /* Main.storyboard */; };
 		B1225A71212828880093BFC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1225A70212828880093BFC6 /* Assets.xcassets */; };
 		B1225A74212828880093BFC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1225A72212828880093BFC6 /* LaunchScreen.storyboard */; };
+		B1225A7D212836780093BFC6 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1225A7C212836780093BFC6 /* InterfaceController.swift */; };
+		B1225A8021283EF50093BFC6 /* NetworkCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1225A7F21283EF50093BFC6 /* NetworkCore.swift */; };
+		B1225A8421284CB60093BFC6 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1225A8321284CB60093BFC6 /* ChartViewController.swift */; };
+		B1225A87212A04C00093BFC6 /* ChartDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1225A86212A04C00093BFC6 /* ChartDataProvider.swift */; };
+		B1225A8A212A12980093BFC6 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1225A89212A12980093BFC6 /* Ticker.swift */; };
+		B1225A8E212A95370093BFC6 /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1225A8D212A95370093BFC6 /* ChartViewModel.swift */; };
+		B1225A90212A95930093BFC6 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1225A8F212A95930093BFC6 /* ChartView.swift */; };
 		F3AF36B82EB65DCFA47E2871 /* Pods_SocketTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD672E77E3322E0E4183831B /* Pods_SocketTestApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +25,16 @@
 		5EE39B67F4C9408F7B6390C1 /* Pods-SocketTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocketTestApp/Pods-SocketTestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B1225A66212828860093BFC6 /* SocketTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1225A69212828860093BFC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B1225A6B212828860093BFC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B1225A6E212828860093BFC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B1225A70212828880093BFC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1225A73212828880093BFC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1225A75212828880093BFC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1225A7C212836780093BFC6 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B1225A7F21283EF50093BFC6 /* NetworkCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCore.swift; sourceTree = "<group>"; };
+		B1225A8321284CB60093BFC6 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		B1225A86212A04C00093BFC6 /* ChartDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataProvider.swift; sourceTree = "<group>"; };
+		B1225A89212A12980093BFC6 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
+		B1225A8D212A95370093BFC6 /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
+		B1225A8F212A95930093BFC6 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		DD672E77E3322E0E4183831B /* Pods_SocketTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocketTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,14 +88,83 @@
 		B1225A68212828860093BFC6 /* SocketTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				B1225A88212A12720093BFC6 /* Models */,
+				B1225A81212842660093BFC6 /* Stories */,
+				B1225A7E21283EDD0093BFC6 /* NetworkLayer */,
+				B1225A7B212836650093BFC6 /* Common */,
 				B1225A69212828860093BFC6 /* AppDelegate.swift */,
-				B1225A6B212828860093BFC6 /* ViewController.swift */,
-				B1225A6D212828860093BFC6 /* Main.storyboard */,
 				B1225A70212828880093BFC6 /* Assets.xcassets */,
 				B1225A72212828880093BFC6 /* LaunchScreen.storyboard */,
 				B1225A75212828880093BFC6 /* Info.plist */,
 			);
 			path = SocketTestApp;
+			sourceTree = "<group>";
+		};
+		B1225A7B212836650093BFC6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B1225A7C212836780093BFC6 /* InterfaceController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B1225A7E21283EDD0093BFC6 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B1225A85212A04A50093BFC6 /* Providers */,
+				B1225A7F21283EF50093BFC6 /* NetworkCore.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		B1225A81212842660093BFC6 /* Stories */ = {
+			isa = PBXGroup;
+			children = (
+				B1225A8221284C930093BFC6 /* Chart */,
+			);
+			path = Stories;
+			sourceTree = "<group>";
+		};
+		B1225A8221284C930093BFC6 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				B1225A8C212A1BE10093BFC6 /* ViewModels */,
+				B1225A8B212A1BD60093BFC6 /* Views */,
+				B1225A8321284CB60093BFC6 /* ChartViewController.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		B1225A85212A04A50093BFC6 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				B1225A86212A04C00093BFC6 /* ChartDataProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		B1225A88212A12720093BFC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B1225A89212A12980093BFC6 /* Ticker.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B1225A8B212A1BD60093BFC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1225A8F212A95930093BFC6 /* ChartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B1225A8C212A1BE10093BFC6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B1225A8D212A95370093BFC6 /* ChartViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,7 +229,6 @@
 			files = (
 				B1225A74212828880093BFC6 /* LaunchScreen.storyboard in Resources */,
 				B1225A71212828880093BFC6 /* Assets.xcassets in Resources */,
-				B1225A6F212828860093BFC6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,22 +290,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1225A6C212828860093BFC6 /* ViewController.swift in Sources */,
 				B1225A6A212828860093BFC6 /* AppDelegate.swift in Sources */,
+				B1225A8A212A12980093BFC6 /* Ticker.swift in Sources */,
+				B1225A8021283EF50093BFC6 /* NetworkCore.swift in Sources */,
+				B1225A87212A04C00093BFC6 /* ChartDataProvider.swift in Sources */,
+				B1225A8421284CB60093BFC6 /* ChartViewController.swift in Sources */,
+				B1225A7D212836780093BFC6 /* InterfaceController.swift in Sources */,
+				B1225A8E212A95370093BFC6 /* ChartViewModel.swift in Sources */,
+				B1225A90212A95930093BFC6 /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B1225A6D212828860093BFC6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B1225A6E212828860093BFC6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B1225A72212828880093BFC6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -360,7 +436,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SocketTestApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.socket..SocketTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -375,7 +455,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SocketTestApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.socket..SocketTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
