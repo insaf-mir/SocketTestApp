@@ -42,8 +42,7 @@ class ChartViewModel {
             let dataSet = LineChartDataSet(values: dataEntry, label: "Last price")
             let data = LineChartData(dataSet: dataSet)
             self?.chartDataVariable.accept(data)
-        })
-        .disposed(by: disposeBag)
+        }).disposed(by: disposeBag)
     }
     
     private func configureChartDataSet(with chartData: [ChartDataEntry]) -> LineChartDataSet {

@@ -7,16 +7,22 @@
 //
 
 import UIKit
+import SciChart
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let interfaceController = InterfaceController.shared
     
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = interfaceController.window
         interfaceController.openInitialScreen()
+        registerCharts()
         return true
+    }
+    
+    func registerCharts() {
+        SCIChartSurface.setRuntimeLicenseKey(ChartAccessKey)
     }
 }
 

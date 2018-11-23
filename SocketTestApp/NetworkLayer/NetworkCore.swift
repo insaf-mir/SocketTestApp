@@ -33,7 +33,9 @@ class NetworkCore {
             }
             
             self?.socket?.onDisconnect = { (error: Error?) in
-                print("socket disconnected with error: \(error)")
+                if let error = error {
+                    print("socket disconnected with error: \(error)")
+                }
                 observer.onNext(false)
                 guard let error = error else {
                     return

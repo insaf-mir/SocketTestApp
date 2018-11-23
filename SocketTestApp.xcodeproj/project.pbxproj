@@ -17,6 +17,10 @@
 		B1225A8A212A12980093BFC6 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1225A89212A12980093BFC6 /* Ticker.swift */; };
 		B1225A8E212A95370093BFC6 /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1225A8D212A95370093BFC6 /* ChartViewModel.swift */; };
 		B1225A90212A95930093BFC6 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1225A8F212A95930093BFC6 /* ChartView.swift */; };
+		B366575221A7F76B006C4BAD /* SciChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B366575121A7F76B006C4BAD /* SciChartViewModel.swift */; };
+		B3C323C821A7E3460093B41B /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C323C721A7E3460093B41B /* Keys.swift */; };
+		B3C323CC21A7EA8C0093B41B /* SciChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C323CB21A7EA8C0093B41B /* SciChartView.swift */; };
+		B3C323CE21A7EAA00093B41B /* SciChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C323CD21A7EAA00093B41B /* SciChartController.swift */; };
 		F3AF36B82EB65DCFA47E2871 /* Pods_SocketTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD672E77E3322E0E4183831B /* Pods_SocketTestApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +39,10 @@
 		B1225A89212A12980093BFC6 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
 		B1225A8D212A95370093BFC6 /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
 		B1225A8F212A95930093BFC6 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		B366575121A7F76B006C4BAD /* SciChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SciChartViewModel.swift; sourceTree = "<group>"; };
+		B3C323C721A7E3460093B41B /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		B3C323CB21A7EA8C0093B41B /* SciChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SciChartView.swift; sourceTree = "<group>"; };
+		B3C323CD21A7EAA00093B41B /* SciChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SciChartController.swift; sourceTree = "<group>"; };
 		DD672E77E3322E0E4183831B /* Pods_SocketTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocketTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,6 +96,7 @@
 		B1225A68212828860093BFC6 /* SocketTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				B3C323C321A7E3140093B41B /* Frameworks */,
 				B1225A88212A12720093BFC6 /* Models */,
 				B1225A81212842660093BFC6 /* Stories */,
 				B1225A7E21283EDD0093BFC6 /* NetworkLayer */,
@@ -103,6 +112,7 @@
 		B1225A7B212836650093BFC6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				B3C323C621A7E33A0093B41B /* Helpers */,
 				B1225A7C212836780093BFC6 /* InterfaceController.swift */,
 			);
 			path = Common;
@@ -120,6 +130,7 @@
 		B1225A81212842660093BFC6 /* Stories */ = {
 			isa = PBXGroup;
 			children = (
+				B3C323C921A7EA6D0093B41B /* SciChart */,
 				B1225A8221284C930093BFC6 /* Chart */,
 			);
 			path = Stories;
@@ -167,6 +178,47 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		B366575021A7F756006C4BAD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B366575121A7F76B006C4BAD /* SciChartViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B3C323C321A7E3140093B41B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3C323C621A7E33A0093B41B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B3C323C721A7E3460093B41B /* Keys.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B3C323C921A7EA6D0093B41B /* SciChart */ = {
+			isa = PBXGroup;
+			children = (
+				B366575021A7F756006C4BAD /* ViewModel */,
+				B3C323CA21A7EA7E0093B41B /* Views */,
+				B3C323CD21A7EAA00093B41B /* SciChartController.swift */,
+			);
+			path = SciChart;
+			sourceTree = "<group>";
+		};
+		B3C323CA21A7EA7E0093B41B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3C323CB21A7EA8C0093B41B /* SciChartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -201,6 +253,7 @@
 				TargetAttributes = {
 					B1225A65212828860093BFC6 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -247,6 +300,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${PODS_ROOT}/SciChart/SciChart.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 			);
@@ -257,6 +311,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SciChart.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 			);
@@ -291,13 +346,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1225A6A212828860093BFC6 /* AppDelegate.swift in Sources */,
+				B3C323CC21A7EA8C0093B41B /* SciChartView.swift in Sources */,
 				B1225A8A212A12980093BFC6 /* Ticker.swift in Sources */,
 				B1225A8021283EF50093BFC6 /* NetworkCore.swift in Sources */,
 				B1225A87212A04C00093BFC6 /* ChartDataProvider.swift in Sources */,
+				B3C323CE21A7EAA00093B41B /* SciChartController.swift in Sources */,
 				B1225A8421284CB60093BFC6 /* ChartViewController.swift in Sources */,
 				B1225A7D212836780093BFC6 /* InterfaceController.swift in Sources */,
 				B1225A8E212A95370093BFC6 /* ChartViewModel.swift in Sources */,
+				B3C323C821A7E3460093B41B /* Keys.swift in Sources */,
 				B1225A90212A95930093BFC6 /* ChartView.swift in Sources */,
+				B366575221A7F76B006C4BAD /* SciChartViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +494,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocketTestApp/Frameworks",
+				);
 				INFOPLIST_FILE = SocketTestApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -443,7 +506,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.socket..SocketTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -454,6 +517,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SocketTestApp/Frameworks",
+				);
 				INFOPLIST_FILE = SocketTestApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -462,7 +529,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.socket..SocketTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -18,10 +18,13 @@ class InterfaceController: NSObject {
     }
     
     func openInitialScreen() {
-        let tabBarController = UINavigationController(rootViewController: ChartViewController())
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [
+            UINavigationController(rootViewController: ChartViewController()),
+            UINavigationController(rootViewController: SciChartController()),
+        ]
         window.rootViewController = tabBarController
         window.backgroundColor = .white
         window.makeKeyAndVisible()
     }
-    
 }
