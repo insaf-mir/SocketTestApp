@@ -96,7 +96,6 @@
 		B1225A68212828860093BFC6 /* SocketTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				B3C323C321A7E3140093B41B /* Frameworks */,
 				B1225A88212A12720093BFC6 /* Models */,
 				B1225A81212842660093BFC6 /* Stories */,
 				B1225A7E21283EDD0093BFC6 /* NetworkLayer */,
@@ -184,13 +183,6 @@
 				B366575121A7F76B006C4BAD /* SciChartViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		B3C323C321A7E3140093B41B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		B3C323C621A7E33A0093B41B /* Helpers */ = {

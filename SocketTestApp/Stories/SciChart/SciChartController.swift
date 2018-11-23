@@ -23,14 +23,24 @@ class SciChartController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Sci chart"
+        prepareRenderableSerias()
         bind()
     }
     
     func bind() {
-        viewModel.chartDataVariable.subscribe(onNext: { [weak self] data in
-            self?.contentView.chartView.renderableSeries.clear()
-            self?.contentView.chartView.renderableSeries.add(data)
+        viewModel.visiblePartVariable.subscribe(onNext: { range in
+            self.contentView.updateVisiblePart(range)
         }).disposed(by: disposeBag)
+    }
+    
+    func prepareRenderableSerias() {
+        let lineRenderableSeries = SCIFastLineRenderableSeries()
+        lineRenderableSeries.dataSeries = viewModel.lineData
+        let marker = SCICrossPointMarker()
+        marker.width = 4.0
+        marker.height = 4.0
+        lineRenderableSeries.style.pointMarker = marker
+        contentView.chartView.renderableSeries.add(lineRenderableSeries)
     }
     
 }

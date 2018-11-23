@@ -36,4 +36,22 @@ class SciChartView: UIView {
         }
     }
     
+    func updateVisiblePart(_ range: NSRange) {
+        guard
+            let visibleRangeX = chartView.xAxes.item(at: 0)?.visibleRange as? SCIDoubleRange,
+            let minX = chartView.renderableSeries.firstObject()?.dataSeries.xValues().value(at: Int32(range.location)),
+            let maxX = chartView.renderableSeries.firstObject()?.dataSeries.xValues().value(at: Int32(range.upperBound)),
+            let visibleRangeY = chartView.xAxes.item(at: 0)?.visibleRange as? SCIDoubleRange,
+            let minY = chartView.renderableSeries.firstObject()?.dataSeries.xValues().value(at: Int32(range.location)),
+            let maxY = chartView.renderableSeries.firstObject()?.dataSeries.xValues().value(at: Int32(range.upperBound))
+        else {
+            return
+        }
+        visibleRangeX.min = minX
+        visibleRangeX.max = maxX
+        visibleRangeY.min = minY
+        visibleRangeY.max = maxY
+        chartView.invalidateElement()
+    }
+    
 }
